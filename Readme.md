@@ -1,2 +1,1 @@
-- Required NodeJS installed
-- `npm install` then run `npm run dev`
+ビュー : https://mogo-landing-page.vercel.app
