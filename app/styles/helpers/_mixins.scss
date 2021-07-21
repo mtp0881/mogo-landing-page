@@ -5,13 +5,13 @@
 }
 
 // set absolute center
-@mixin absoluteCenter($direction: "left") {
-  position: absolute;
+@mixin absoluteCenter($direction: "left", $position: absolute) {
+  position: $position;
   @if $direction == "left" {
     left: 50%;
     transform: translateX(-50%);
   }
-  @if $direction == "right" {
+  @if $direction == "top" {
     top: 50%;
     transform: translateY(-50%);
   }

@@ -23,5 +23,21 @@ mixin aboutItem(src,title,iconClass,alt="")
 
 mixin numberItem(count,text)
 	.number-item
-				h4.number-item-count= count
-				span.number-item-text= text
+		h4.number-item-count= count
+		span.number-item-text= text
+
+mixin serviceItem(src,title,desc)
+	.service-item 
+		img(src= src, alt="").service-item-img
+		.service-item-info
+			h3.service-item-title= title
+			p.service-item-desc= desc
+
+mixin wedoItem(src,title,desc,active="")
+	.wedo-item(class= active)
+		.wedo-item-header 
+			img(src= src, alt="").wedo-item-icon
+			h3.wedo-item-title= title
+			i.fal.fa-angle-down.wedo-item-arrow
+		.wedo-item-content 
+			.wedo-item-text= desc

@@ -3,7 +3,6 @@
   @include bg(white);
   &-list {
     @include flexbox();
-    margin-left: -4rem;
     margin-top: 6.5rem;
   }
   &-list:first-of-type {
@@ -12,8 +11,7 @@
     padding-bottom: 5rem;
   }
   &-item {
-    width: calc(33.33% - 4rem);
-    margin-left: 4rem;
+    width: calc(100% / 3);
     @include flexbox(flex-start);
   }
   &-item-img {
@@ -22,9 +20,11 @@
   }
   &-item-title {
     color: $title-color;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
     font-weight: 500;
+    line-height: 1.4;
+    @include textClamp(1);
   }
   &-item-desc {
     color: $text-color;
@@ -34,5 +34,36 @@
   }
   &-item-info {
     width: calc(100% - 9.5rem);
+    padding-right: 30px;
+    height: 100%;
+    @include flexbox(flex-start, space-between, column);
+  }
+  // grid
+  // @include minWidth(1024px) {
+  //   &-list {
+  //     display: grid;
+  //     grid-template-columns: repeat(3, 1fr);
+  //     grid-gap: 0 4rem;
+  //   }
+  //   &-item {
+  //     width: auto;
+  //   }
+  // }
+  @include maxWidth(1023px) {
+    padding: 5rem 0;
+    &-list {
+      display: block;
+    }
+    &-list:first-of-type {
+      padding-bottom: 3rem;
+      margin-bottom: 0;
+    }
+    &-item {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    &-item:not(:last-child) {
+      margin-bottom: 3rem;
+    }
   }
 }

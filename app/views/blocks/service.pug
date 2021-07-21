@@ -3,34 +3,10 @@ section.service
     +blockBox("We work with","Amazing service")
     .service-container
       .service-list
-        .service-item 
-          img(src="/images/img-service-icon1.png", alt="").service-item-img
-          .service-item-info
-            h3.service-item-title Photography 
-            p.service-item-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        .service-item 
-          img(src="/images/img-service-icon2.png", alt="").service-item-img
-          .service-item-info
-            h3.service-item-title Web design 
-            p.service-item-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        .service-item 
-          img(src="/images/img-service-icon3.png", alt="").service-item-img
-          .service-item-info
-            h3.service-item-title Creativity 
-            p.service-item-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        +serviceItem("/images/img-service-icon1.png","Photography","Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+        +serviceItem("/images/img-service-icon2.png","Web design","Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+        +serviceItem("/images/img-service-icon3.png","Creativity","Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
       .service-list
-        .service-item 
-          img(src="/images/img-service-icon4.png", alt="").service-item-img
-          .service-item-info
-            h3.service-item-title Seo 
-            p.service-item-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        .service-item 
-          img(src="/images/img-service-icon5.png", alt="").service-item-img
-          .service-item-info
-            h3.service-item-title Css/Html
-            p.service-item-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        .service-item 
-          img(src="/images/img-service-icon6.png", alt="").service-item-img
-          .service-item-info
-            h3.service-item-title Digital 
-            p.service-item-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        +serviceItem("/images/img-service-icon4.png","Seo","Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+        +serviceItem("/images/img-service-icon5.png","Css/Html","Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+        +serviceItem("/images/img-service-icon6.png","Digital","Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
