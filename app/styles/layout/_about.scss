@@ -91,5 +91,6 @@
     }
   }
 }
-
+// @include minWidth(768px) {
 @include hoverEffect(".about-item", ".about-content");
+// }

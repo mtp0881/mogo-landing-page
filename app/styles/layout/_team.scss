@@ -1,4 +1,5 @@
 .team {
+  --image-height: 47rem;
   background-color: white;
   padding: 10rem 0;
   &-list {
@@ -8,14 +9,14 @@
     width: calc(100% / 3 - 2rem);
   }
   &-image {
-    @include size(100%, 47rem);
+    @include size(100%, var(--image-height));
     object-fit: cover;
   }
   &-info {
     padding: 3rem 1.5rem;
     text-align: center;
     line-height: 1.4;
-    height: calc(100% - 47rem);
+    height: calc(100% - var(--image-height));
     @include flexbox(center, space-between, column);
   }
   &-name {
@@ -50,5 +51,25 @@
       @include bg($primary-color);
     }
   }
+  @include maxWidth(1023px) {
+    padding: 5rem 0;
+    &-list {
+      @include touchSlider(55%);
+    }
+  }
+  @include maxWidth(767px) {
+    --image-height: 40rem;
+    &-list {
+      @include touchSlider(90%);
+    }
+  }
 }
 @include hoverEffect(".team-main", ".team-content");
+
+.brand {
+  padding: 8rem 0;
+  @include bg($gray-color);
+  @include maxWidth(767px) {
+    padding: 3rem 0;
+  }
+}
