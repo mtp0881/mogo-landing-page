@@ -1,5 +1,6 @@
 .wedo {
   padding: 10rem 0;
+  width: 100%;
   &-image {
     object-fit: cover;
   }
@@ -67,7 +68,7 @@
       @include flexbox(stretch, space-between);
     }
     &-content,
-    .image {
+    &-image {
       width: calc(50% - 15px);
     }
     // grid

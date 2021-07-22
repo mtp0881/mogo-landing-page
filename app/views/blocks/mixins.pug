@@ -41,3 +41,8 @@ mixin wedoItem(src,title,desc,active="")
 			i.fal.fa-angle-down.wedo-item-arrow
 		.wedo-item-content 
 			.wedo-item-text= desc
+
+mixin socialItem(iconClass,href="#")
+	li.team-social-item
+		a.team-social-link(href= href) 
+			i(class= iconClass)

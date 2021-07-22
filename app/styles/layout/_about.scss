@@ -3,13 +3,18 @@
   padding-bottom: 11rem;
   background-color: white;
   &-list {
-    // display: flex;
-    // flex-wrap: wrap;
-    // margin-left: -3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 3rem;
+
+    /* Flex
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -3rem;
+    Flex */
   }
+
+  /* Hover Effect Start
   &-item {
     // margin-left: 3rem;
     // width: calc(100% / 3 - 3rem);
@@ -35,7 +40,15 @@
       transform: translate(1rem, 1rem);
     }
   }
+  Hover Effect End */
+
   &-content {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+
+    /* Hover Effect Start
     @include absoluteFull();
     opacity: 0;
     visibility: hidden;
@@ -46,11 +59,8 @@
         rgba($secondary-color, 0.8)
       ),
       no-repeat center / cover;
-    color: white;
     @include flexbox(center, center, column);
-    text-transform: uppercase;
-    text-align: center;
-    padding: 2rem;
+    Hover Effect End */
   }
   &-icon {
     font-size: 1.6rem;
@@ -81,3 +91,5 @@
     }
   }
 }
+
+@include hoverEffect(".about-item", ".about-content");
