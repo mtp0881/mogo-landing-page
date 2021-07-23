@@ -32,6 +32,9 @@
   &-item-full {
     height: 100%;
   }
+  &-desc {
+    color: white;
+  }
   @include maxWidth(1600px) {
     &-list {
       height: 60rem;
@@ -54,6 +57,7 @@
     }
   }
   @include maxWidth(767px) {
+    padding-top: 5rem;
     &-column {
       padding: 0 15px;
       width: 100%;
@@ -61,7 +65,6 @@
     &-item-full,
     &-item {
       height: auto;
-      // padding-top: 10px;
     }
   }
 }

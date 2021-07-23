@@ -67,3 +67,48 @@ mixin teamItem(src,name,position,iconClass)
 		.team-info
 			h3.team-name= name
 			span.team-position= position
+
+mixin workItem(src="./images/img-work1.png",iconSrc="./images/img-work-icon.png",title="Lorem ipsum",desc="Lorem ipsum",full="")
+	.work-item(class= full)
+		img(src= src, alt="").work-image
+		.work-content 
+			img(src= iconSrc, alt="").work-icon
+			h3.work-title= title
+			span.work-desc.text.text-light= desc
+
+mixin peopleItem(src="./images/img-people1.png",name="Matthew Dix",job="Graphic design",desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.")
+	li.people-item 
+		img(src= src, alt="").people-avatar
+		.people-info 
+			h3.people-name= name
+			span.people-job.text.text--light= job
+			p.people-desc.text= desc
+
+mixin storyItem(src="./images/img-blog1.png",dateNumber="10",dateText="Jan",title="Matthew Dix",view="100",comment="100",desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.")
+	li.story-item
+		.story-media
+			img(src= src).story-image
+			.story-date
+				span.story-date-number= dateNumber
+				span.story-date-text.text.text--light= dateText
+		h3.story-title= title
+		.story-desc.text
+			p.story-desc-inner= desc
+		.story-meta 
+			.story-meta-item 
+				i.fa.fa-eye.story-meta-icon 
+				span.story-meta-number.text.text--light= view
+			.story-meta-item 
+				i.fa.fa-comment.story-meta-icon 
+				span.story-meta-number.text.text--light= comment
+
+mixin quoteItem(src="../images/img-quote.png",type ="false",author="Jon Doe",desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit")
+	.quote-item
+		if type == "false"
+			.quote-icon
+				img(src= src, alt="")
+		else 
+			img(src= src, alt="").quote-image
+		.quote-info
+			p.quote-desc= desc
+			span.quote-author= author 

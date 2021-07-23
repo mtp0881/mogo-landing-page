@@ -174,12 +174,20 @@
       margin-bottom: 3rem;
       padding-bottom: 3rem;
     }
-    .header-bottom-text {
+    .header-content-more {
+      border-width: 2px;
+    }
+    .header-bottom-number {
       display: none;
+    }
+    .header-bottom-text {
+      margin-left: 0;
+      font-size: 1.4rem;
     }
     .header-bottom-item {
       text-align: center;
       padding-top: 1.5rem;
+      width: calc(25% - 1.5rem);
     }
     .header-bottom-item::before {
       width: 35%;

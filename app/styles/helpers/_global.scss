@@ -5,24 +5,32 @@ a {
 img {
   display: block;
   max-width: 100%;
-  // object-fit: cover;
 }
 
 body {
   font-family: $primary-font;
-  //font chu bao nhieu thi chieu cao bay nhieu
   line-height: 1;
   color: $title-color;
-  //dat font chu nho nhat
   font-size: 1.4rem;
 }
 
-// css nay xai chung cho moi element
+input,
+button {
+  font-family: $primary-font;
+  line-height: 1;
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
 
+// global class
 .text {
   font-family: $secondary-font;
   font-size: 1.5rem;
   font-style: italic;
+  color: $text-color;
+  line-height: 1.4;
 }
 .text--light {
   font-weight: 300;

@@ -3,48 +3,13 @@ section.work
     +blockBox("What we do","Some of our work","Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
   .work-list
     .work-column
-      .work-item 
-        img(src="./images/img-work1.png", alt="").work-image
-        .work-content 
-          img(src="./images/img-work-icon.png", alt="").work-icon
-          h3.work-title Creatively designed 
-          span.work-desc.text.text-light Lorem ipsum dolor sit
-      .work-item 
-        img(src="./images/img-work2.png", alt="").work-image
-        .work-content 
-          img(src="./images/img-work-icon.png", alt="").work-icon
-          h3.work-title Creatively designed 
-          span.work-desc.text.text-light Lorem ipsum dolor sit
+      +workItem("./images/img-work1.png","./images/img-work-icon.png","Creatively designed","Lorem ipsum dolor sit")
+      +workItem("./images/img-work2.png","./images/img-work-icon.png","Creatively designed","Lorem ipsum dolor sit")
     .work-column
-      .work-item
-        img(src="./images/img-work3.png", alt="").work-image
-        .work-content 
-          img(src="./images/img-work-icon.png", alt="").work-icon
-          h3.work-title Creatively designed 
-          span.work-desc.text.text-light Lorem ipsum dolor sit
-      .work-item 
-        img(src="./images/img-work4.png", alt="").work-image
-        .work-content 
-          img(src="./images/img-work-icon.png", alt="").work-icon
-          h3.work-title Creatively designed 
-          span.work-desc.text.text-light Lorem ipsum dolor sit
+      +workItem("./images/img-work3.png","./images/img-work-icon.png","Creatively designed","Lorem ipsum dolor sit")
+      +workItem("./images/img-work4.png","./images/img-work-icon.png","Creatively designed","Lorem ipsum dolor sit")
     .work-column
-      .work-item.work-item-full
-        img(src="./images/img-work5.png", alt="").work-image
-        .work-content 
-          img(src="./images/img-work-icon.png", alt="").work-icon
-          h3.work-title Creatively designed 
-          span.work-desc.text.text-light Lorem ipsum dolor sit
+      +workItem("./images/img-work5.png","./images/img-work-icon.png","Creatively designed","Lorem ipsum dolor sit","work-item-full")
     .work-column
-      .work-item 
-        img(src="./images/img-work6.png", alt="").work-image
-        .work-content 
-          img(src="./images/img-work-icon.png", alt="").work-icon
-          h3.work-title Creatively designed 
-          span.work-desc.text.text-light Lorem ipsum dolor sit
-      .work-item 
-        img(src="./images/img-work7.png", alt="").work-image
-        .work-content 
-          img(src="./images/img-work-icon.png", alt="").work-icon
-          h3.work-title Creatively designed 
-          span.work-desc.text.text-light Lorem ipsum dolor sit
+      +workItem("./images/img-work6.png","./images/img-work-icon.png","Creatively designed","Lorem ipsum dolor sit")
+      +workItem("./images/img-work7.png","./images/img-work-icon.png","Creatively designed","Lorem ipsum dolor sit")
