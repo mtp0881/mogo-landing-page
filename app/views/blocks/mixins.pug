@@ -14,12 +14,12 @@ mixin blockBox(caption,title,desc)
 		if desc 
 			p.block-box-desc= desc
 
-mixin aboutItem(src,title,iconClass,alt="")
+mixin aboutItem(data)
 	.about-item 
-		img.about-image(src= src,alt= alt)
+		img.about-image(src= data.src,alt= data.alt)
 		.about-content
-			i.about-icon(class= iconClass)
-			span.about-title= title
+			i.about-icon(class= data.iconClass)
+			span.about-title= data.title
 
 mixin numberItem(count,text)
 	.number-item

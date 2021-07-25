@@ -42,8 +42,8 @@ button {
   color: white;
   min-height: 100rem;
   background-color: #e78182;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 129, 130, 0.8)), to(rgba(238, 215, 137, 0.8))), url("/images/img-header-bg.jpg") no-repeat center/cover;
-  background: linear-gradient(to bottom, rgba(231, 129, 130, 0.8), rgba(238, 215, 137, 0.8)), url("/images/img-header-bg.jpg") no-repeat center/cover; }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(231, 129, 130, 0.8)), to(rgba(238, 215, 137, 0.8))), url("/images/header-bg.jpg") no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(231, 129, 130, 0.8), rgba(238, 215, 137, 0.8)), url("/images/header-bg.jpg") no-repeat center/cover; }
   .header-top {
     padding-top: 3rem;
     display: -webkit-box;
@@ -550,8 +550,8 @@ button {
 
 .device {
   padding-top: 11rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.75))), url("../../images/img-device-bg.png") no-repeat center/cover;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.75)), url("../../images/img-device-bg.png") no-repeat center/cover; }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.75))), url("/images/img-device-bg.png") no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.75)), url("/images/img-device-bg.png") no-repeat center/cover; }
   .device-media {
     text-align: center; }
   .device-image {
@@ -1180,8 +1180,8 @@ button {
 
 .people {
   padding: 10rem 0 3rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.75))), url("../images/img-people-bg.png") no-repeat center/cover;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.75)), url("../images/img-people-bg.png") no-repeat center/cover; }
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(rgba(255, 255, 255, 0.75))), url("/images/img-people-bg.png") no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.75)), url("/images/img-people-bg.png") no-repeat center/cover; }
   .people-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1412,6 +1412,7 @@ button {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap; }
   .map-heading {
+    cursor: pointer;
     position: relative;
     font-size: 2.4em;
     font-weight: bold;
