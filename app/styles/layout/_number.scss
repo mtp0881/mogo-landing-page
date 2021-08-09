@@ -20,6 +20,7 @@
     margin-bottom: 2rem;
   }
   &-item-text {
+    font-size: 1.3rem;
     line-height: 1.4;
   }
   @include maxWidth(1023px) {
